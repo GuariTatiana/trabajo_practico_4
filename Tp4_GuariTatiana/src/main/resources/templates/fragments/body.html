@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+
+	<div data-th-fragment="contenido" >
+	
+	<section class=" w-75 mx-auto">
+	<h2>Acerca de</h2>
+	<p>La Universidad Nacional de Jujuy adopta para su organización el sistema de facultades. Las Facultades son las unidades académicas, administrativas y de gobierno y están integradas por sus docentes, estudiantes, egresados inscriptos en las mismas y no docentes.
+<br>
+El gobierno de la Universidad es ejercido por:
+</p>
+	<ul>
+	<li>La Asamblea Universitaria.</li>
+	<li>El Consejo Superior.</li>
+	<li>El Rector.</li>
+	<li>Los Consejos Académicos de las Facultades.</li>
+	<li>Los Decanos.</li>
+	</ul>
+	</section>
+	</div>
+	
+
+<!-- CARRUSEL DE NOTICIAS -->
+	
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-th-fragment="contenido2">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="/img/noticia 1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>La Facultad de Ingeniería lamenta el fallecimiento del Ing. Enrique Hamity
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/img/noticia2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Charla sobre Computación de Alto Rendimiento y Biometría por el Dr. Ricardo J. Barrientos</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/noticia3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Acreditación de la carrera Licenciatura en Ciencias Geológicas
+        </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- -----CONTENIDO DE CARRERAS---- -->
+
+<div class="row" data-th-fragment="carreras">
+  <div class="col-4">
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#list-item-1">Carreras de Grado</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">Carreras de PreGrado</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">Carreras de PosGrado</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h4 id="list-item-1">Carreras de Grado</h4>
+      <p>* Ingeniería Informática<br>
+		* Ingeniería Industrial<br>
+		* Ingeniería Química<br>
+		* Ingeniería de Minas<br>
+		* Licenciatura en Sistemas<br>
+		* Licenciatura en Tecnología de los Alimentos<br>
+		* Licenciatura en Ciencias Geológicas
+		</p>
+      <h4 id="list-item-2">Carreras de PreGrado</h4>
+      <p>* Analista Programador Universitario<br>
+			* Tecnicatura Universitaria en Perforaciones<br>
+			* Tecnicatura Universitaria en Diseño Integral de Videojuegos
+			 </p>
+      <h4 id="list-item-3">Carreras de PosGrado</h4>
+      <p>...</p>
+     
+    </div>
+  </div>
+</div>
+
+<!-- CALENDARIO ACADEMICO  -->
+
+<div class="row" data-th-fragment="calendario">
+  
+    <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+		<p>  
+		PRIMER TURNO ORDINARIO DE EXÁMENES (Ciclo 2024)  <br>
+      <a class="p-1 rounded" href="#simple-list-item-1">mas informacion</a>
+      <br>SEGUNDO TURNO ORDINARIO de Exámenes (Ciclo 2024)<br>
+      <a class="p-1 rounded" href="#simple-list-item-2">mas informacion</a>
+     <br> TERCER TURNO ORDINARIO de Exámenes (Ciclo 2024)<br>
+      <a class="p-1 rounded" href="#simple-list-item-3">mas informacion</a>
+      <br>CUARTO TURNO ORDINARIO DE EXÁMENES (Ciclo 2024)<br>
+      <a class="p-1 rounded" href="#simple-list-item-4">mas informacion</a>
+     <br> SEGUNDO TURNO DE EXÁMENES DE REVÁLIDA<br>
+      <a class="p-1 rounded" href="#simple-list-item-5">mas informacion</a>
+		</p>
+  	</div>
+ </div>
+ 
+
+</body>
+</html>
