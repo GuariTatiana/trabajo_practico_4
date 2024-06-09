@@ -1,5 +1,8 @@
 package ar.edu.unju.fi.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Alumno {
 	 	private int dni;
 	    private String nombre;
@@ -9,13 +12,15 @@ public class Alumno {
 	    private String fechaNacimiento;
 	    private String domicilio;
 	    private int LU;
+	    private boolean estado;
+
 	    
 	    public Alumno() {
 			// TODO Auto-generated constructor stub
 		}
 
 		public Alumno(int dni, String nombre, String apellido, String email, String telefono, String fechaNacimiento,
-				String domicilio, int lU) {
+				String domicilio, int lU, boolean estado) {
 			super();
 			this.dni = dni;
 			this.nombre = nombre;
@@ -25,6 +30,7 @@ public class Alumno {
 			this.fechaNacimiento = fechaNacimiento;
 			this.domicilio = domicilio;
 			LU = lU;
+			this.estado = estado;
 		}
 
 		public int getDni() {
@@ -89,6 +95,14 @@ public class Alumno {
 
 		public void setLU(int lU) {
 			LU = lU;
+		}
+
+		public boolean isEstado() {
+			return estado;
+		}
+
+		public void setEstado(boolean estado) {
+			this.estado = estado;
 		}
 	    
 	    
