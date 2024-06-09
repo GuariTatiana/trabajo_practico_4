@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+<meta charset="UTF-8">
+<!-- para ser un diseño responsivo -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+
+<title>Formulario materia</title>
+</head>
+
+
+<body class=" bg-secondary">
+
+<div class="container" align="center"> 
+<br><br><br>
+<h1>Formulario Materia</h1>
+<!-- recibe en el fromulario el objeto  -->
+<form data-th-object="${nuevaMateria}" data-th-action="@{/guardarMateria}" method="post">
+		
+  <div class="col-sm-6">
+    <label for="codigo" class="form-label">Codigo</label>
+    <input type="text" class="form-control" id="codigo"  data-th-field="*{codigo}" required>
+  </div>
+  
+  <div class="col-sm-6">
+    <label for="nombre" class="form-label">Nombre Materia</label>
+    <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}">
+  </div>
+  
+  
+  <div class="col-sm-6">
+    <label for="curso" class="form-label">Curso</label>
+    <input type="text" class="form-control" id="curso" data-th-field="*{curso}" >
+  </div>
+  
+  <div class="col-sm-6">
+    <label for="cantHoras" class="form-label"> Cantidad de Horas</label>
+    <input type="number" class="form-control" id="cantHoras" data-th-field="*{cantidadHoras}">
+  </div>
+  
+  
+  <div class="col-sm-6">
+    <label for="modalidad" class="form-label">Modalidad</label>
+	<div>
+			<label for="modalidadP">Presencial</label>
+			<input id="modalidadP" type="radio" value="Presencial" data-th-field="*{modalidad}"></input>	
+			<label for="modalidadV">Virtual</label>
+			<input id="modalidadV" type="radio" value="Virtual" data-th-field="*{modalidad}"></input>	
+		<br>
+	</div> 
+  </div>
+  
+  
+  <div class="col-sm-6">
+    <label for="docente" class="form-label">Docente</label>
+    <input type="text" class="form-control" id="docente" >
+    
+    <select id="provincia" name="provincia" required class="col-sm-6" >
+			<option value="Jujuy" selected>Jujuy</option>
+			<option value="salta">Salta</option>
+		</select>
+  </div>
+  
+  
+  <div class="col-sm-6">
+    <label for="carrera" class="form-label">Carrera</label>
+    <input type="text" class="form-control" id="carrera" >
+  </div>
+  
+  <br>
+  <button type="submit" class="btn btn-primary">Guardar materia</button>
+</form>
+</div>
+
+<br>
+<div class="text-center">
+<a href="/principal/index">volver a pagina principal</a>
+</div>
+<br><br>
+
+<script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>	
+</body>
+</html>
