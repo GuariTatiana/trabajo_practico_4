@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+<meta charset="UTF-8">
+<!-- para ser un diseño responsivo -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+
+<title>Formulario carrera</title>
+</head>
+
+
+<body class=" bg-secondary">
+
+<div class="container" align="center"> 
+<br><br><br>
+<h1>Formulario Carrera</h1>
+<!-- recibe en el fromulario el objeto  -->
+<form data-th-object="${nuevaCarrera}"
+data-th-action="@{/guardarCarrera}" method="post">
+		
+  <div class="col-sm-6">
+    <label for="codigo" class="form-label">Codigo</label>
+    <input type="text" class="form-control" id="codigo" data-th-field="*{codigo}" required>
+  </div>
+  
+  <div class="col-sm-6">
+    <label for="nombre" class="form-label">Nombre Carrera</label>
+    <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}">
+  </div>
+  <div class="col-sm-6">
+    <label for="cantidad" class="form-label"> Cantidad Año</label>
+    <input type="number" class="form-control" id="cantidad" data-th-field="*{cantidadAnios}" >
+  </div>
+  
+  <br>
+  <button type="submit" class="btn btn-primary">Guardar carrera</button>
+</form>
+</div>
+
+<br>
+<div class="text-center">
+<a href="/principal/index">volver a pagina principal</a>
+</div>
+<br><br>
+
+<script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>	
+</body>
+</html>
